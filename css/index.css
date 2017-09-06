@@ -1,0 +1,344 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+/*链接自定义字体样式*/
+@font-face {
+    font-family:"ilsscrp";
+    src:url("../font/ilsscrp.ttf");
+    font-weight:600;
+}
+ul li{
+    list-style: none;
+}
+a{
+  text-decoration: none;
+}
+/*导航栏*/
+#nav_bar{
+    width: 100%;
+    height: 40px;
+    color: #4C4C4C;
+}
+#nav_bar li{
+   cursor:pointer;
+}
+/*导航栏左侧大屏ul*/
+.nav_bar_left_ul{
+    width:400px;
+    height: 40px;
+    float: left;
+}
+
+.nav_bar_left_ul li{
+    font-size: 15px;
+    height: 40px;
+    line-height: 50px;
+    margin-left: 20px;
+    float: left;
+}
+.nav_bar_left_ul li:hover{
+   color:#302106;
+}
+.nav_bar_right_ul li:hover{
+   color:#302106;
+}
+/*logo*/
+#logo{
+  font-size: 40px;
+  font-family:"ilsscrp";
+  line-height:40px;
+}
+#logo i{
+  margin-top:3px;
+}
+#logo span{
+  display:block;
+  line-height:30px;
+}
+/*logo hover样式*/
+#logo:hover{
+  cursor:pointer;
+  animation: change 10s infinite;
+}
+@keyframes change
+{
+    0%   {color: red;}
+    20%  {color: yellow;}
+    40%  {color: blue;}
+    60% {color: green;}
+    80% {color: orange;}
+    100% {color: purple;}
+}
+
+
+
+/*导航栏又侧大屏ul*/
+.nav_bar_right_ul{
+    width: 220px;
+    height: 40px;
+    float: right;
+}
+.nav_bar_right_ul li{
+    font-size: 20px;
+    width: 40px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+}
+#chinese{
+    width: 100px;
+}
+/*导航栏点击浮现的ul*/
+#hover_ul{
+    width: 80px;
+    height: 105px;
+    color: white;
+    background-color: black;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+#hover_ul li{
+
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 10px;
+}
+#in{
+  background:deepskyblue;
+}
+/*导航栏小屏左侧ul*/
+.nav_bar_mobile_left{
+
+  height:50px;
+  line-height: 50px;
+  font-size: 40px;
+  float: left;
+}
+/*导航栏小屏又侧ul*/
+.nav_bar_mobile_right{
+  width: 100px;
+  height: 40px;
+  float: right;
+  line-height: 40px;
+}
+/*点击按钮*/
+.click{
+  margin-top: 5px;
+  width: 45px;
+  height: 40px;
+  font-size:20px;
+  line-height: 30px;
+}
+/*隐藏的ul*/
+.hide_ul{
+    clear: both;
+    width: 100%;
+    height: 200px;
+    color: black;
+    position: relative;
+    top: 0;
+    z-index: 0;
+}
+.hide_ul li{
+    font-size: 15px;
+    width: 85%;
+    list-style: none;
+
+}
+#hide_ul li{
+  font-size: 20px;
+  line-height: 30px;
+}
+/*中部整体*/
+#main{
+  transition: all .4s ease-in-out;
+  position: relative;
+  z-index: 2;
+
+}
+/*快点管理模块*/
+.hero{
+  width: 100%;
+  height: 400px;
+  background-color:#2188B6;
+}
+.hero p{
+  color: white;
+}
+.hero a{
+   color: white;
+}
+.hero_title{
+  font-size: 70px;
+  color: white;
+  margin-top: 80px;
+  font-weight: bold;
+  text-shadow:5px 3px 5px #999;
+}
+/*管理模块两个按钮*/
+.hidden-md-down{
+  border: 1px solid slategray;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  width: 185px;
+  height:60px;
+  text-align: center;
+  line-height: 47px;
+  margin: 30px 0;
+}
+/*两个按钮hover效果*/
+.hidden-md-down:hover {
+    background-color: #ffffff;
+    color: #2188B6;
+    transition: all .3s ease-in;
+}
+/*图文混排标题*/
+.feature-heading{
+  font-size: 50px;
+  margin-top: 80px;
+}
+/*图文混排*/
+.feature-text{
+  font-size: 20px;
+}
+/*你还在等什么模块*/
+.wait{
+  width: 100%;
+  height: 200px;
+  background-color: #2188B6;
+}
+.hero-btn{
+  border: 1px solid slategray;
+}
+.hero-prompt{
+    width: 400px;
+    height: 40px;
+    line-height: 200px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    float: left;
+    text-shadow:3px 3px 5px #999;
+}
+/*btn样式*/
+.float-right_btn{
+    width: 185px;
+    height:60px;
+    text-align: center;
+    line-height: 47px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    float: right;
+    margin-top: 75px
+}
+.float-right_btn:hover {
+    background-color: #ffffff;
+    color: #2188B6;
+    transition: all .3s ease-in;
+}
+/*6段文字模块*/
+.featurette{
+  width: 350px;
+  height: 90px;
+  margin: 50px 0;
+}
+.featurette p{
+  font-size: 20px;
+  color: #6D7691;
+}
+.featurette h2{
+  font-size: 35px;
+  color: #5A5A5A;
+}
+.feature-text{
+  font-size: 20px;
+  color: #6D767D;
+}
+/*页脚部分*/
+.footer{
+  width: 100%;
+  height: 100px;
+}
+/*页脚左右两个ul*/
+.footer-left , .footer-right{
+  width: 300px;
+  height: 30px;
+  line-height: 100px;
+  float: left;
+}
+.footer-right{
+  float: right;
+}
+.footer-left li{
+  font-size: 15px;
+  float: left;
+  margin-left: 10px;
+}
+.footer-right li{
+  font-size: 15px;
+    float: left;
+    margin-left: 20px;
+}
+.feature-image-speed{
+  width: 500px;
+  height: 300px;
+}
+.feature-image-secure{
+  width: 375px;
+  height: 300px;
+}
+.feature-image-reliable{
+  width: 500px;
+  height: 300px;
+}
+/*响应式*/
+/*小屏*/
+@media screen and (max-width:768px) {
+    .nav_bar_left_ul , .nav_bar_right_ul{
+      display: none;
+    }
+}
+/*大屏*/
+@media screen and (min-width:769px) {
+    .nav_bar_mobile_left , .nav_bar_mobile_right , .hide_ul{
+      display: none;
+    }
+
+}
+/*缩小是改变字体*/
+@media screen and (max-width:1200px) {
+    .feature-secure{
+          position: relative;
+          top: -340px;
+    }
+    .feature-image-secure{
+      position: relative;
+      top: 200px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:972px){
+    .hero_title{
+      font-size: 55px;
+    }
+    .hidden-md-down{
+                    display: none;
+                  }
+                }
+
+
+@media screen and (min-width:0px) and (max-width:768px){
+    .hero_title{
+      font-size: 35px;
+    }
+    .hidden-md-down{
+                    display: none;
+                  }
+
+}

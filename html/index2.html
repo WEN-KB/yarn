@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../logo/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/index.js"></script>
+<body>
+  <!-- 导航栏 -->
+    <div class="container">
+        <nav id="nav_bar">
+            <ul class="nav_bar_left_ul">
+                    <li id="logo"><i class="fa fa-meh-o" aria-hidden="true"></i>yarn</li>
+                    <li>新手指南</li>
+                    <li>文档</li>
+                    <li>包</li>
+                    <li>博客</li>
+            </ul>
+            <ul class="nav_bar_right_ul">
+                <li id="chinese">Aお中文<i class="fa fa-sort-desc" aria-hidden="true"></i>
+                    <ul id="hover_ul">
+                        <li>ENGLISH</li>
+                        <li>FRANCE</li>
+                        <li>BRASIL</li>
+                        <li id="in">中文</li>
+                    </ul>
+
+                </li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                <li><i class="fa fa-github" aria-hidden="true"></i></li>
+            </ul>
+            <div class="nav_bar_mobile_left" >
+                  <i class="fa fa-meh-o" aria-hidden="true"></i>yarn
+            </div>
+            <div class="nav_bar_mobile_right" >
+                  <button class="click btn"><i class="fa fa-th-list" aria-hidden="true"></i></button>
+            </div>
+            <ul class="hide_ul" id="hide_ul">
+
+                <li>新手指南</li>
+                <li>文档</li>
+                <li>包</li>
+                <li>博客</li>
+                <li id="chinese">Aお中文<i class="fa fa-sort-desc" aria-hidden="true"></i>
+                    <ul id="hover_ul">
+                        <li>ENGLISH</li>
+                        <li>FRANCE</li>
+                        <li>BRASIL</li>
+                        <li >中文</li>
+                    </ul>
+
+                </li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                <li><i class="fa fa-github" aria-hidden="true"></i></li>
+
+            </ul>
+
+        </nav>
+    </div>
+  <!-- 中部整体   -->
+    <div id="main" style="top:0">
+  <!-- 快速管理 -->
+    <div class="hero">
+        <div class="container">
+            <h1 class="hero_title">
+                快速、可靠、安全的依赖管理.
+            </h1>
+            <div>
+                <a class="btn hero-btn hidden-md-down">立刻开始！</a>
+                &nbsp;&nbsp;
+                <a class="btn hero-btn hidden-md-down">安装 Yarn</a>
+            </div>
+            <p>稳定版:<a href="#"> v0.27.5</a>  • 候选发布版本 <a href="#"> v0.28.4</a></P>
+        </div>
+    </div>
+    <!-- 图文混排部分 -->
+    <div class="container features">
+      <!-- 第一个图文混排 -->
+  <div class="row feature">
+    <div class="col-lg-7">
+      <h2 class="feature-heading">
+        速度超快。
+      </h2>
+      <p class="feature-text">
+        Yarn 会缓存它下载的每个包，所以不需要重复下载。它还能并行化操作以最大化资源利用率，所以安装速度之快前所未有。
+      </p>
+    </div>
+    <div class="col-lg-5">
+      <img class="feature-image img-fluid mx-auto feature-image-speed" src="../image/feature-speed.png" alt="猫骑着一艘宇宙飞船的水彩画">
+    </div>
+  </div>
+
+  <hr class="feature-divider">
+    <!-- 第二个图文混排 -->
+  <div class="row feature">
+    <div class="col-lg-5 ">
+      <img class="feature-image img-fluid mx-auto feature-image-secure" src="../image/feature-secure.png" alt="猫驾驶着一个机器人套装的水彩画">
+    </div>
+    <div class="col-lg-7 feature-secure">
+      <h2 class="feature-heading">
+        超级安全。
+      </h2>
+      <p class="feature-text">
+        Yarn 在每个安装包的代码执行前使用校验码验证包的完整性。
+      </p>
+    </div>
+
+  </div>
+
+  <hr class="feature-divider">
+   <!-- 第三个图文混排 -->
+  <div class="row feature">
+    <div class="col-lg-7">
+      <h2 class="feature-heading">
+        超级可靠。
+      </h2>
+      <p class="feature-text">
+        Yarn 使用一个格式详尽但简洁的 lockfile 和一个精确的算法来安装，能够保证在一个系统上的运行的安装过程也会以同样的方式运行在其他系统上。
+      </p>
+    </div>
+    <div class="col-lg-5">
+      <img class="feature-image img-fluid mx-auto feature-image-reliable" src="../image/feature-reliable.png" alt="猫在屏幕后面的座位上挥舞的水彩画">
+    </div>
+  </div>
+</div>
+  <!-- 你还在等什么 ？-->
+<div class="wait">
+  <div class="container">
+    <p class="hero-prompt">
+      你还在等什么？
+    </p>
+
+    <a href="#" class="btn hero-btn float-right_btn">
+      立刻开始！
+    </a>
+  </div>
+</div>
+<!-- 6段文字 -->
+<div class="container featurettes">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 featurette">
+      <h2>离线模式</h2>
+      <p>如果你以前安装了一个包，你可以没有网络连接再次安装它。</p>
+
+    </div>
+
+    <div class="col-lg-4 col-md-6 featurette">
+      <h2>确定性</h2>
+      <p>不管是什么顺序，在不同的机器上的依赖会以同一方式安装。</p>
+
+    </div>
+
+    <div class="col-lg-4 col-md-6 featurette">
+      <h2>网络性能</h2>
+      <p>Yarn 高效的排队请求并且避免请求瀑布以便最大化网络利用率。</p>
+
+    </div>
+    <div class="col-lg-4 col-md-6 featurette">
+      <h2>相同的软件包</h2>
+      <p>从 npm 安装软件包并保持包处理流程相同。</p>
+
+    </div>
+
+    <div class="col-lg-4 col-md-6 featurette">
+      <h2>网络适应</h2>
+      <p>单个请求失败不会导致安装失败，请求失败时会重试。</p>
+
+    </div>
+
+    <div class="col-lg-4 col-md-6 featurette">
+      <h2>扁平模式</h2>
+      <p>解析不匹配的依赖版本为一个单一的版本来避导致免多个版本。</p>
+
+    </div>
+  </div>
+
+</div>
+  <hr class="feature-divider">
+  <!-- 页脚 -->
+  <div class="container">
+  <footer class="footer">
+    <ul class="footer-left">
+      <li class="footer-item">Yarn</li>
+      <li class="footer-item"><a href="#">在 BSD 协议下发布</a></li>
+      <li class="footer-item"><a href="#">行为守则</a></li>
+    </ul>
+
+    <ul class="footer-right">
+
+        <li class="footer-item"><a href="#">Artwork by Shitty Watercolour</a></li>
+        <li class="footer-item"><a href="#">编辑本页</a></li>
+
+    </ul>
+  </footer>
+</div>
+</div>
+</body>
+
+</html>
